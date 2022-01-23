@@ -302,8 +302,8 @@ h3 {
 		width: 1440px;
 		height: 1024px;
 		background: var(--color2);
-		margin: 50px auto;
-		padding-bottom: 10px;
+		margin: auto;
+		padding: 50px 0;
 		position: relative;
 	}
 
