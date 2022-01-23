@@ -1,0 +1,331 @@
+
+/* Import Google fonts  */
+
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;600;700&display=swap');
+
+
+/* Colors  */
+
+:root {
+	--color1: #333333;
+	--color2: #585B89;
+	--color3: #8386AF;
+	--color4: #6690FF;
+	--color5: #FFFFFF;
+	--color6: #FCEEEE;
+	--color7: #BA2926;
+	--color8: #11BB41;
+	--color9: #ECFDF1;
+	--color10: #0363ED;
+
+}
+
+/* Body  */
+
+body {
+	font-family: 'Urbanist', arial, sans-serif;
+	line-height: 1.5rem;
+	padding: 0;
+	margin: 0;
+	background: var(--color1);
+}
+
+/* Typography  */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Urbanist', arial, sans-serif;
+	margin: 0;
+}
+
+h1 {
+	font-size: 2.5rem;
+	line-height: 3rem;
+	font-weight: 700;
+	text-align: center;
+	margin-bottom: 24px;
+}
+
+h2 {
+	font-size: 2.25rem;
+	line-height: 2.7rem;
+	font-weight: 700;
+	color: var(--color5);
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+
+h3 {
+	font-size: 1.5rem;
+	line-height: 1.8rem;
+	font-weight: 600;
+	font-style: normal;
+	margin-bottom: 33px;
+}
+
+/* margin & padding  */
+
+.mb-40 {
+	margin-bottom: 40px;
+}
+
+.mb-42 {
+	margin-top: -42px;
+}
+
+.mb-48 {
+	margin-bottom: 48px;
+}
+
+.bottom-r {
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+}
+
+.top-r {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.quiz-block h4 {
+	text-align: center;
+	font-weight: 400;
+	font-size: 14px;
+	font-style: normal;
+	color: #fff;
+	opacity: 0.5;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 35px;
+}
+
+.quiz-block-inner {
+	background: var(--color5);
+	position: relative;
+	border-radius: 24px;
+	padding: 95px 32px 40px 32px;
+	z-index: 200;
+}
+
+.top-img {
+	position: absolute;
+	top: -54px;
+	right: 32px;
+}
+
+.dog-img{
+	height: 220px;
+	width: auto;
+	border-radius: 10px;
+}
+
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 100%;
+}
+
+.list-unstyled {
+	padding-left: 0px;
+	margin-bottom: 0px;
+}
+
+.list-unstyled li {
+	list-style: none;
+}
+
+.list-unstyled li:last-child .btn-3 {
+	margin-bottom: 0;
+}
+
+.clearfix::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.btn-3 {
+	font-family: 'Urbanist', arial, sans-serif;
+    border: 1px solid var(--color3);
+    background: transparent;
+    display: block;
+    width: 100%;
+    text-align: left;
+    border-radius: 12px;
+    margin: 0;
+    height: 56px;
+    text-decoration: none;
+    color: var(--color3);
+    font-size: 20px;
+    margin-bottom: 24px;
+    cursor: pointer;
+}
+
+.btn-3 .letter {
+	margin-left: 24px;
+	margin-right: 29px;
+	font-weight: 700;
+	float: left;
+}
+
+.btn-3:hover,
+.btn-3:focus {
+	background: var(--color4);
+	border: 1px solid var(--color4);
+	color: var(--color5);	
+}
+
+.btn-3.selected .letter {
+	color: #fff;
+}
+
+.btn-3.wrong-answer {
+	background: var(--color6);
+	border: none;
+	color: var(--color7);
+}
+
+.btn-3.wrong-answer:hover {
+	background: var(--color6);
+	border: none;
+	color: var(--color7);
+}
+.btn-3.wrong-answer:hover .letter {
+	background: var(--color6);
+	border: none;
+	color: var(--color7);
+}
+
+.btn-3.wrong-answer .letter {
+	color: var(--color7);
+}
+
+.wrong-icon {
+	color: var(--color7);
+	float: right;
+	margin-right: 18px;
+}
+
+.btn-3.right-answer {
+	background: var(--color9);
+	border: none;
+	color: var(--color8);
+}
+
+.btn-3.right-answer .letter {
+	color: var(--color8);
+}
+
+.right-icon {
+	color: var(--color8);
+	float: right;
+	margin-right: 18px;
+}
+.state-icon{
+	display: none;
+}
+.wrong-answer .state-icon.wrong-icon,
+.right-answer .state-icon.right-icon{
+	display: block;
+}
+.btn-next {
+	font-family: 'Urbanist', arial, sans-serif;
+    float: right;
+    margin-top: 40px;
+    background: var(--color10);
+    height: 48px;
+    border: none;
+    width: 114px;
+    border-radius: 30px;
+    text-align: left;
+    padding-left: 32px;
+    color: #fff;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 14px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.right-arrow {
+	float: right;
+    padding-right: 13.5px;
+    padding-top: 3.5px;	
+}
+
+.result {
+	text-align: center;
+	font-size: 1.5rem;
+	font-weight: 400;
+	line-height: 1.8rem;
+	margin-bottom: 107px;
+}
+
+.count {
+	font-size: 2rem;
+	font-weight: 700;
+	line-height: 2.4rem;
+	color: var(--color8);
+}
+
+.try {
+	font-family: 'Urbanist', arial, sans-serif;
+    height: 48px;
+    padding: 16px;
+    width: 174px;
+    border-radius: 30px;
+    color: var(--color10);
+    border: 1px solid var(--color10);
+    background: transparent;
+    font-size: 14px;
+    line-height: 16px;
+    display: block;
+    letter-spacing: 1px;
+    font-weight: 600;
+    text-align: center;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+
+@media screen and (min-width: 1440px) {
+
+	#wrapper {
+		width: 1440px;
+		height: 1024px;
+		background: var(--color2);
+		margin: 50px auto;
+		padding-bottom: 10px;
+		position: relative;
+	}
+
+	.quiz-block {
+	    padding-top: 54px;
+	    width: 464px;
+	    margin: 0 auto;
+	}
+
+	.quiz-block::before {
+	    content: url('../../assets/images/rectangle-bottom.png');
+	    position: absolute;
+	    bottom: -6px;
+	    left: 0;
+	}
+
+	.quiz-block::after {
+	    content: url('../../assets/images/rectangle-top.png');
+	    position: absolute;
+	    top: 0;
+	    right: 0;
+	}
+
+}
+
